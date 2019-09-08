@@ -35,5 +35,6 @@ awk 'FNR==NR{a[$0];next}!($0 in a)' ~/RE_Challenges/set-up.sh ~/RE_Challenges/tm
 mv ~/RE_Challenges/tmp/set-up.sh ~/RE_Challenges
 mv ~/RE_Challenges/tmp/update.sh ~/RE_Challenges
 mv ~/RE_Challenges/tmp/remove.sh ~/RE_Challenges
+mv ~/RE_Challenges/tmp/README.md ~/RE_Challenges
 
 rm -rf ~/RE_Challenges/tmp
