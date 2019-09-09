@@ -22,6 +22,10 @@ ex6: ex6.cpp
 ex7: ex7.cpp
 	g++ ex7.cpp -o ex7
 
+ex8: ex8.cpp
+	g++ -static -s ex8.cpp -o ex8
+	upx --best ex8
+
 all:
 	make ex0
 	make ex1
@@ -31,6 +35,7 @@ all:
 	make ex5
 	make ex6
 	make ex7
+	make ex8
 
 install:
 	make all
