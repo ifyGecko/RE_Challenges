@@ -1,4 +1,3 @@
-//#include <cstdlib>
 #include <iostream>
 
 using namespace std;
@@ -13,12 +12,12 @@ char* generator(){
 
 int main(int argc, char** argv){
   if(argc!=2){
-    printf("Usage: ./prog input\n");
-    printf("Hint: ./prog -h\n");
+    cout << "Usage: ./prog input\n";
+    cout << "Hint: ./prog -h\n";
   }else if(argv[1]==string("-h")){
-    printf("Escape these simple characters.\n");
+    cout << "Escape these simple characters.\n";
   }else{
-    argv[1]==string(generator())?printf("Score!\n"):printf("Fail!\n");
+    argv[1]==string(generator())?cout << "Score!\n":cout << "Fail!\n";
   }
   return 0;
 }
