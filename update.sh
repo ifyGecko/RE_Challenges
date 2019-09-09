@@ -2,6 +2,8 @@
 
 apt update && apt upgrade -y
 
+apt autoremove -y
+
 r2pm update
 
 git clone https://github.com/ifyGecko/RE_Challenges tmp
