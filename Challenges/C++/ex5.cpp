@@ -16,7 +16,7 @@ int main(int argc, char** argv){
     printf("Usage: ./prog input\n");
     printf("Hint: ./prog -h\n");
   }else if(argv[1]==string("-h")){
-    printf("Linux is mighty, linux is great but it is not alone!\n");
+    printf("Escape these simple characters.\n");
   }else{
     argv[1]==string(generator())?printf("Score!\n"):printf("Fail!\n");
   }
