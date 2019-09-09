@@ -12,16 +12,12 @@ public:
 int main(int argc, char** argv){
   a c;
   if(argc !=2){
-    cout << "Usage: ./prog input" << endl;
-    cout << "Hint: ./prog -h" << endl;
+    cout << "Usage: ./prog input\n";
+    cout << "Hint: ./prog -h\n";
   }else if(argv[1]==string("-h")){
-    cout << "Classes might need to undergo construction." << endl;
+    cout << "Classes might need to undergo construction.\n";
   }else{
-    if(atoi(argv[1])==c.b){
-      cout << "Score!" << endl;
-    }else{
-      cout << "Fail!" << endl;
-    }
+    atoi(argv[1])==c.b?cout << "Score!\n":cout << "Fail!\n";
   }
   return 0;
 }
