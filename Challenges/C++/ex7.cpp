@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstdlib>
 
+using namespace std;
+
 class base{
  public:
   virtual int gen(){
@@ -18,8 +20,6 @@ class deriv:public base{
     return b.gen()<<1;
   }
 };
-
-using namespace std;
 
 int main(int argc, char** argv){
   if(argc!=2){
