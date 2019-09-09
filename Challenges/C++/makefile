@@ -19,6 +19,9 @@ ex5: ex5.cpp
 ex6: ex6.cpp
 	x86_64-w64-mingw32-g++ -static -s ex6.cpp -o ex6
 
+ex7: ex7.cpp
+	g++ ex7.cpp -o ex7
+
 all:
 	make ex0
 	make ex1
@@ -27,6 +30,7 @@ all:
 	make ex4
 	make ex5
 	make ex6
+	make ex7
 
 install:
 	make all
