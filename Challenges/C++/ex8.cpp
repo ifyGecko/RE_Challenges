@@ -27,12 +27,12 @@ char* buzz(){
 
 int main(int argc, char** argv){
   if(argc!=2){
-    cout << "Usage: ./prog input" << endl;
-    cout << "Hint: ./prog -h" << endl;
+    cout << "Usage: ./prog input\n";
+    cout << "Hint: ./prog -h\n";
   }else if(string(argv[1]) == "-h"){
-    cout << "Evil Nix version of ex6." << endl;
+    cout << "Evil Nix version of ex6.\n";
   }else{
-    string(argv[1])==buzz()?cout << "Score!" << endl:cout << "Fail!" << endl;
+    string(argv[1])==buzz()?cout << "Score!\n":cout << "Fail!\n";
   }
   return 0;
 }
