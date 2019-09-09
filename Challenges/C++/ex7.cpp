@@ -23,14 +23,14 @@ using namespace std;
 
 int main(int argc, char** argv){
   if(argc!=2){
-    printf("Usage: ./prog input\n");
-    printf("Hint: ./prog -h\n");
+    cout << "Usage: ./prog input\n";
+    cout << "Hint: ./prog -h\n";
   }else if(argv[1]==string("-h")){
-    printf("The math in these methods are virtually irritating.\n");
+    cout << "The math in these methods are virtually irritating.\n";
   }else{
     base b;
     deriv d;
-    d.gen()-b.gen()==atoi(argv[1])?printf("Score!\n"):printf("Fail!\n");
+    d.gen()-b.gen()==atoi(argv[1])?cout << "Score!\n":cout << "Fail!\n";
   }
   return 0;
 }
