@@ -5,10 +5,10 @@ using namespace std;
 
 int main(int argc, char** argv){
   if(argc!=2){
-    printf("Usage: ./prog input\n");
-    printf("Hint: ./prog -h\n");
+    cout << "Usage: ./prog input\n";
+    cout << "Hint: ./prog -h\n";
   }else if(argv[1]==string("-h")){
-    printf("I bet a debugger would help, maybe even a quick binary patch.\n");
+    cout << "I bet a debugger would help, maybe even a quick binary patch.\n";
   }else{
     ptrace(PTRACE_TRACEME, 0, 1, 0)==-1&&argv[1]==string("@@@@@@@@")?cout<<"Score!\n":cout<<"Fail!\n";
   }
