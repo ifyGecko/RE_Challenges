@@ -5,7 +5,7 @@ r2pm -u r2dec
 r2pm -u r2ghidra-dec
 
 #remove packages installed from kali repos
-apt remove gccgo pkg-config libssl-dev bc libreoffice python3-venv cmake bison -y
+apt remove gccgo pkg-config libssl-dev bc libreoffice python3-venv cmake bison mingw-w64 -y
 
 #remove all packages that remain that are no longer needed
 apt autoremove -y
