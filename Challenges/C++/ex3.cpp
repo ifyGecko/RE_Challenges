@@ -10,15 +10,15 @@ bool check(T x, T y){
 
 int main(int argc, char** argv){
     if(argc==2 && string(argv[1])=="-h"){
-        cout << "Don't worry the template of doom can't hurt you." <<endl;
+        cout << "Don't worry the template of doom can't hurt you.\n";
     }else if(argc!=3){
-        cout << "Usage: ./prog input input" << endl;
-        cout << "Hint: ./prog -h" << endl;
+        cout << "Usage: ./prog input input\n";
+        cout << "Hint: ./prog -h\n";
     }else{
         int a(atoi(argv[1]));
         int b(atoi(argv[1]));
         if(check(a, b)){
-            a*b<a+b?cout << "Score!" <<endl:cout << "Fail!" << endl;
+            a*b<a+b?cout << "Score!\n":cout << "Fail!\n";
         }
     }
     return 0;
