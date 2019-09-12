@@ -25,11 +25,7 @@ int main(int argc, char** argv){
     }
     p->b=bar();
     p->c=p->b[2]+1;
-    if(check(p, argv)==0){
-      printf("Score!\n");
-    }else{
-      printf("Fail!\n");
-    }
+    check(p, argv)==0?printf("Score!\n"):printf("Fail!\n");
     free(p);
   }
   return 0;
