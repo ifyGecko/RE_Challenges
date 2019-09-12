@@ -1,32 +1,32 @@
 ex0: ex0.c
-	gcc ex0.c -o ex0
+	gcc -v ex0.c -o ex0
 
 ex1: ex1.c
-	gcc ex1.c -o ex1
+	gcc -v ex1.c -o ex1
 
 ex2: ex2.c
-	gcc ex2.c -o ex2
+	gcc -v ex2.c -o ex2
 
 ex3: ex3.c
-	gcc ex3.c -o ex3
+	gcc -v ex3.c -o ex3
 
 ex4: ex4.c
-	gcc ex4.c -o ex4
+	gcc -v ex4.c -o ex4
 
 ex5: ex5.c
-	gcc ex5.c -o ex5
+	gcc -v ex5.c -o ex5
 
 ex6: ex6.c
-	gcc ex6.c -o ex6
+	gcc -v ex6.c -o ex6
 
 ex7: ex7.c
-	gcc ex7.c -o ex7 -lcrypto
+	gcc -v ex7.c -o ex7 -lcrypto
 
 ex8: ex8.c
-	gcc ex8.c -o ex8
+	gcc -v ex8.c -o ex8
 
 ex9: ex9.c
-	gcc ex9.c -o ex9
+	gcc -v ex9.c -o ex9
 	strip ex9
 
 all:
