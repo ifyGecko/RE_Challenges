@@ -3,12 +3,12 @@
 #update list of available packages, add https support for communicating with kali repos,
 #add 32-bit support, and install needed packages from the kali repositories
 apt update
-apt install apt-transport-https -y
-echo "deb https://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
+apt install apt-transport-https -y #https support
+echo "deb https://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list #http repo list to https
 apt update
-dpkg --add-architecture i386
+dpkg --add-architecture i386 #32-bit support
 apt update && apt upgrade -y
-apt install gccgo pkg-config libssl-dev bc libreoffice python3-venv cmake bison mingw-w64 -y
+apt install gccgo pkg-config libssl-dev bc libreoffice python3-venv cmake bison mingw-w64 -y 
 
 #go to challenges directories & compile challenges from makefile
 cd ~/RE_Challenges/Challenges/C
@@ -22,11 +22,11 @@ make install
 git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
 
-#GdbShellPipe - pipe gdb output to shell commands
+#GdbShellPipe - pipe gdb output to shell commands from with in gdb
 git clone https://github.com/hq6/GdbShellPipe ~/GdbShellPipe
 ~/GdbShellPipe/Install.sh
 
-#enable c++ demangling and set assembly syntax to intel
+#enable c++ demangling and set assembly syntax to intel for gdb
 echo "set print asm-demangle on" >> ~/.gdbinit
 echo "set disassembly-flavor intel" >> ~/.gdbinit
 
@@ -34,7 +34,7 @@ echo "set disassembly-flavor intel" >> ~/.gdbinit
 git clone https://github.com/radare/radare2 ~/radare2
 ~/radare2/sys/install.sh
 
-#update radare2 package manager and install decompilers
+#initialize radare2 package manager and install decompilers
 r2pm init
 r2pm -i r2dec
 r2pm -i r2ghidra-dec
