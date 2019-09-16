@@ -57,7 +57,7 @@ int main(int argc, char** argv){
     cout << "Usage: ./prog input\n";
     cout << "Hint: ./prog -h\n";
   }else if(string(argv[1]) == "-h"){
-    cout << "Global objects must be constructed before the scope of main.\n";
+    cout << "Constructors can run before the scope of main.\n";
   }else{
     obfsc(125);
     obfsc(13);
