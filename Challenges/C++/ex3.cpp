@@ -10,7 +10,7 @@ bool check(T x, T y){
 
 int main(int argc, char** argv){
     if(argc==2 && string(argv[1])=="-h"){
-        cout << "Don't worry the template of doom can't hurt you.\n";
+        cout << "Don't worry, the template of doom can't hurt you.\n";
     }else if(argc!=3){
         cout << "Usage: ./prog input input\n";
         cout << "Hint: ./prog -h\n";
