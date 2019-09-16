@@ -3,6 +3,11 @@ Purpose:
 
     A repository of introductory exercises to practice reverse engineering with help for when you get lost.
 
+Motivation:
+
+    Give a series of simple exercises to teach about reverse engineering. With the idea that it will also be 
+    useful as a template to build your own sequence of challenges to further your knowledge while helping others.
+
 Set-Up:
 
     Install Oracle virtualbox then, import the Kali Linux virtualbox ova file.
