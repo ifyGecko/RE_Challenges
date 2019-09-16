@@ -4,8 +4,8 @@
 using namespace std;
 
 template<typename T>
-bool check(T x, T y){
-    return x==y;
+T check(T x, T y){
+    return x*y;
 }
 
 int main(int argc, char** argv){
@@ -19,6 +19,8 @@ int main(int argc, char** argv){
         int b(atoi(argv[1]));
         if(check(a, b)){
             a*b<a+b?cout << "Score!\n":cout << "Fail!\n";
+        }else{
+            cout << "Fail!\n";   
         }
     }
     return 0;
