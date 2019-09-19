@@ -6,6 +6,9 @@ apt update && apt upgrade -y
 #remove unneeded packages
 apt autoremove -y
 
+#update radare2
+~/radare2/sys/install.sh
+
 #update radare2 package manager
 r2pm update
 
