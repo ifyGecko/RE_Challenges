@@ -8,7 +8,7 @@ Set-Up:
     Install Oracle virtualbox then, import the Kali Linux virtualbox ova file.
   
     1. https://www.virtualbox.org/wiki/Downloads 
-    2. https://images.offensive-security.com/virtual-images/kali-linux-2019.2-vbox-amd64.ova
+    2. https://images.offensive-security.com/virtual-images/kali-linux-2019.3a-vbox-amd64.ova
     
     Start the virtual machine, Username: root && Password: toor, open a terminal and run the 
     following in the window.
