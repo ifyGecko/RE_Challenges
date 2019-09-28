@@ -1,13 +1,9 @@
 #!/bin/bash
 
-#update list of available packages, add https support for communicating with kali repos,
-#add 32-bit support, and install needed packages from the kali repositories
-apt update
-apt install apt-transport-https -y #https support
-echo "deb https://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list #http repo list to https
-apt update
+#add 32-bit support, update list of available packages,
+#upgrade pre-installed packages, and install needed packages
 dpkg --add-architecture i386 #32-bit support
-apt update && apt upgrade -y
+apt update && apt upgrade -y #update package list && upgrade pre-installed packages
 apt install gccgo pkg-config libssl-dev bc libreoffice python3-venv cmake bison mingw-w64 -y 
 
 #go to challenges directories & compile challenges from makefile
