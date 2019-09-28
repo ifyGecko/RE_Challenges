@@ -37,7 +37,7 @@ mv *.docx ~/RE_Challenges/Help/C++
 cd ~/RE_Challenges/tmp/Challenges/Go
 make all
 mv *.go ~/RE_Challenges/Help/Go/Source-Code
-mv ex* ~/RE_Challenges/Challenges/C
+mv ex* ~/RE_Challenges/Challenges/Go
 mv makefile ~/RE_Challenges/Help/Go/Source-Code
 cd ~/RE_Challenges/tmp/Help/Go
 mv *.docx ~/RE_Challenges/Help/Go
