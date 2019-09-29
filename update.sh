@@ -12,6 +12,10 @@ apt autoremove -y
 #update radare2 package manager
 r2pm update
 
+#upgrade r2pm packages
+r2pm -i r2ghidra-dec
+r2pm -i r2dec
+
 #clone new RE_Challenges repo to a temporary directory
 git clone https://github.com/ifyGecko/RE_Challenges tmp
 
