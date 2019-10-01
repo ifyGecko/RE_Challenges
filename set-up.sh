@@ -27,7 +27,7 @@ echo "set print asm-demangle on" >> ~/.gdbinit
 echo "set disassembly-flavor intel" >> ~/.gdbinit
 
 #radare2 - reverse engineering framework
-git clone https://github.com/radare/radare2 ~/radare2
+git clone https://github.com/radareorg/radare2 ~/radare2
 ~/radare2/sys/install.sh
 
 #initialize radare2 package manager and install decompilers
