@@ -38,5 +38,5 @@ How-To-Solve:
 
 TODO:
 
-1. add/improve C++/Go challenges
+1. add/improve Go challenges
 2. add/improve help files
