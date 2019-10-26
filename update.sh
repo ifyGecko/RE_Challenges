@@ -46,6 +46,15 @@ mv makefile ~/RE_Challenges/Help/Go/Source-Code
 cd ~/RE_Challenges/tmp/Help/Go
 mv *.docx ~/RE_Challenges/Help/Go
 
+#update all files related to Exploit challenges
+cd ~/RE_Challenges/tmp/Challenges/Exploit
+make all
+mv *.cpp ~/RE_Challenges/Help/Exploit/Source-Code
+mv ex* ~/RE_Challenges/Challenges/Exploit
+mv makefile ~/RE_Challenges/Help/Exploit/Source-Code
+cd ~/RE_Challenges/tmp/Help/Exploit
+mv *.docx ~/RE_Challenges/Help/Exploit
+
 #takes all lines that are new in the updated set-up.sh and runs them (ensure new tools will be installed)
 awk 'FNR==NR{a[$0];next}!($0 in a)' ~/RE_Challenges/set-up.sh ~/RE_Challenges/tmp/set-up.sh | /bin/bash
 
