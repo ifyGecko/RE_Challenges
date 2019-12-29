@@ -17,6 +17,8 @@ r2pm -i r2ghidra-dec
 r2pm -i r2dec
 
 #clone new RE_Challenges repo to a temporary directory
+# note: a user's /tmp dir could be mounted read-only
+# so relying on it to be executable is not an option
 git clone https://github.com/ifyGecko/RE_Challenges tmp
 
 #update all files related to C challenges
