@@ -3,6 +3,8 @@
 
 using namespace std;
 
+/* TODO: Implement a template that will generate a different 
+value, number or string, each time the code is compiled */
 template<typename T>
 bool check(T x, T y){
     return x==y;
