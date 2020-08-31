@@ -10,7 +10,7 @@ Set-Up:
     1. https://www.virtualbox.org/wiki/Downloads 
     2. https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/
     
-    Start the virtual machine, Username: root && Password: toor, open a terminal and run the 
+    Start the virtual machine, Username: kali && Password: kali, open a terminal and run the 
     following in the window.
     
     git clone https://github.com/ifyGecko/RE_Challenges;cd RE_Challenges;chmod +x set-up.sh;./set-up.sh
