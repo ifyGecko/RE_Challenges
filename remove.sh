@@ -12,7 +12,7 @@ sudo apt autoremove -y
 
 #remove all manually installed tools
 cd ~/
-rm /bin/cutter
+rm ~/cutter
 rm -rf ~/ghidra_9.0.4
 rm -rf ~/GdbShellPipe
 rm -rf ~/radare2
