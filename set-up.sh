@@ -2,9 +2,9 @@
 
 #add 32-bit support, update list of available packages,
 #upgrade pre-installed packages, and install needed packages
-dpkg --add-architecture i386 #32-bit support
-apt update && apt upgrade -y #update package list && upgrade pre-installed packages
-apt install gccgo pkg-config libssl-dev bc libreoffice python3-venv cmake bison mingw-w64 -y 
+sudo dpkg --add-architecture i386 #32-bit support
+sudo apt update && sudo apt upgrade -y #update package list && upgrade pre-installed packages
+sudo apt install gccgo pkg-config libssl-dev bc libreoffice python3-venv cmake bison mingw-w64 -y 
 
 #go to challenges directories & compile challenges from makefile
 cd ~/RE_Challenges/Challenges/C
@@ -41,13 +41,12 @@ unzip ~/ghidra.zip -d ~/
 rm ~/ghidra.zip
 
 #Cutter - Qt application providing radare2 with a GUI
-wget -O ~/cutter https://github.com/radareorg/cutter/releases/download/v1.9.0/Cutter-v1.9.0-x64.Linux.AppImage
+wget -O ~/cutter https://github.com/radareorg/cutter/releases/download/v1.11.1/Cutter-v1.11.1-x64.Linux.AppImage
 chmod +x ~/cutter
-mv ~/cutter /bin
 
 #Veles - visual reverse engineering tool
 wget -O ~/veles.deb https://github.com/codilime/veles/releases/download/2018.05.0.TIF/Veles_2018.05_64bit_Ubuntu1604.deb
-dpkg -i ~/veles.deb
+sudo dpkg -i ~/veles.deb
 rm ~/veles.deb
 
 #end in the RE_Challenges directory
