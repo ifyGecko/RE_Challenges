@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #update list of packages && upgrade installed packages
-apt update && apt upgrade -y
+sudo apt update && apt upgrade -y
 
 #remove unneeded packages
-apt autoremove -y
+sudo apt autoremove -y
 
 #update radare2
 ~/radare2/sys/install.sh
