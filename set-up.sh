@@ -44,10 +44,5 @@ rm ~/ghidra.zip
 wget -O ~/cutter https://github.com/radareorg/cutter/releases/download/v1.11.1/Cutter-v1.11.1-x64.Linux.AppImage
 chmod +x ~/cutter
 
-#Veles - visual reverse engineering tool
-wget -O ~/veles.deb https://github.com/codilime/veles/releases/download/2018.05.0.TIF/Veles_2018.05_64bit_Ubuntu1604.deb
-sudo dpkg -i ~/veles.deb
-rm ~/veles.deb
-
 #end in the RE_Challenges directory
 cd ~/RE_Challenges
