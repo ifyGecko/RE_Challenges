@@ -45,7 +45,7 @@ wget -O ~/cutter https://github.com/radareorg/cutter/releases/download/v1.11.1/C
 chmod +x ~/cutter
 
 #Symlinks for ghidra and cutter
-sudo ln -s ~/ghidra_9.0.4/ghidraRun /usr/bin/ghidra
+sudo ln -s ~/ghidra_9.1.2_PUBLIC/ghidraRun /usr/bin/ghidra
 sudo ln -s ~/cutter /usr/bin/cutter
 
 #end in the RE_Challenges directory
