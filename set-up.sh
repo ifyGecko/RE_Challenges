@@ -36,7 +36,7 @@ r2pm -i r2dec
 r2pm -i r2ghidra-dec
 
 #ghidra - NSA's software reverse engineering framework
-wget -O ~/ghidra.zip https://ghidra-sre.org/ghidra_9.0.4_PUBLIC_20190516.zip
+wget -O ~/ghidra.zip https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip
 unzip ~/ghidra.zip -d ~/
 rm ~/ghidra.zip
 
