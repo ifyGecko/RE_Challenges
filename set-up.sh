@@ -13,6 +13,8 @@ cd ~/RE_Challenges/Challenges/C++
 make install
 cd ~/RE_Challenges/Challenges/Go
 make install
+cd ~/RE_Challenges/Challenges/Exploit
+make install
 
 #peda - python exploitation development assistant script for gdb
 git clone https://github.com/longld/peda.git ~/peda
